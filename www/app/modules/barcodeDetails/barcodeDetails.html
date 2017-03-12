@@ -23,7 +23,7 @@
 			<p class="mrgTp10"><strong>SMS</strong></p>
 			<p class="mrgTp10">To : {{barcodeItem.smsFields.to}}</p>
 			<p class="mrgTp10">Message : {{barcodeItem.smsFields.msg}}</p>
-			<a href="sms:{{barcodeItem.smsFields.to}}?body={{barcodeItem.smsFields.msg}}">SEND</a>
+			<a href="sms:{{barcodeItem.smsFields.to}}?body={{barcodeItem.smsFields.msg}}">ENVIAR</a>
 		</div>
 		
 		<div class="padding10" ng-if="barcodeItem.category == BARCODE_CATEGORIES.VCARD">
@@ -46,19 +46,19 @@
 	</ion-content> 
 	
 	<div ng-if="barcodeItem.category == BARCODE_CATEGORIES.TEXT || barcodeItem.category == BARCODE_CATEGORIES.PRODUCT">
-		<button hide-on-keyboard-open class="fullbutton" type="submit" ng-click="serachOnGoogle(barcodeItem.title, $event)">SEARCH ON GOOGLE</button>
+		<button hide-on-keyboard-open class="fullbutton" type="submit" ng-click="serachOnGoogle(barcodeItem.title, $event)">PROCURAR NO GOOGLE</button>
 	</div>
 	
 	<div ng-if="barcodeItem.category == BARCODE_CATEGORIES.WEBLINK">
-		<button hide-on-keyboard-open class="fullbutton" type="submit" ng-click="openExternalUrl(barcodeItem.title, $event)">OPEN LINK</button>
+		<button hide-on-keyboard-open class="fullbutton" type="submit" ng-click="openExternalUrl(barcodeItem.title, $event)">ABRIR LINK</button>
 	</div>
 	
 	<div ng-if="barcodeItem.category == BARCODE_CATEGORIES.EMAIL">
-		<button ng-click="sendEmail(barcodeItem.emailFields.to, barcodeItem.emailFields.sub, barcodeItem.emailFields.body);" hide-on-keyboard-open class="fullbutton" type="submit">SEND EMAIL</button>
+		<button ng-click="sendEmail(barcodeItem.emailFields.to, barcodeItem.emailFields.sub, barcodeItem.emailFields.body);" hide-on-keyboard-open class="fullbutton" type="submit">ENVIAR  E-MAIL</button>
 	</div>
 	
 	<div ng-if="barcodeItem.category == BARCODE_CATEGORIES.SMS">
-		<button ng-click="sendSMS(barcodeItem.smsFields.to, barcodeItem.smsFields.msg);" hide-on-keyboard-open class="fullbutton" type="submit">SEND SMS</button>
+		<button ng-click="sendSMS(barcodeItem.smsFields.to, barcodeItem.smsFields.msg);" hide-on-keyboard-open class="fullbutton" type="submit">ENVIAR SMS</button>
 	</div>
 			
 </ion-view>

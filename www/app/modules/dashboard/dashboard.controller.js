@@ -118,27 +118,27 @@ barcodeService = "";
 					var defs = new Array();
 
 					defs.push($scope.saveBarcodeItem({
-							"text" : "https://www.linkedin.com",
+							"text" : "https://www.ufba.br",
 							"format" : "QR_CODE",
 							"cancelled" : false
 						}));
 					defs.push($scope.saveBarcodeItem({
-							"text" : "Yogesh Krishnani",
+							"text" : "Fabio Correia",
 							"format" : "QR_CODE",
 							"cancelled" : false
 						}));
 					defs.push($scope.saveBarcodeItem({
-							"text" : "MATMSG:TO:yogesh.h.krishnani@gmail.com;SUB:Subject Line;BODY:Message Lines;;",
+							"text" : "MATMSG:TO:yfabiocj@gmail.com;SUB:Subject Line;BODY:Message Lines;;",
 							"format" : "QR_CODE",
 							"cancelled" : false
 						}));
 					defs.push($scope.saveBarcodeItem({
-							"text" : "SMSTO:9898619162:SMS Line",
+							"text" : "SMSTO:557181940000:SMS Line",
 							"format" : "QR_CODE",
 							"cancelled" : false
 						}));
 					defs.push($scope.saveBarcodeItem({
-							"text" : "BEGIN:VCARD\nVERSION:3.0\nN:Krishnani;Yogesh\nFN:Yogesh Krishnani\nORG:Streebo\nTITLE:Consultant\nADR:;;88/463;Ahmedabad;Gujarat;382424;India\nTEL;WORK;VOICE:\nTEL;CELL:9898619162\nTEL;FAX:\nEMAIL;WORK;INTERNET:yogesh.h.krishnani@gmail.com\nURL:\nBDAY:07/07/1991\nEND:VCARD\n",
+							"text" : "BEGIN:VCARD\nVERSION:3.0\nN:Correia;Fabio\nFN:Fabio Correia\nORG:Streebo\nTITLE:Consultant\nADR:;;88/463;Salvador;Gujarat;382424;Brasil\nTEL;WORK;VOICE:\nTEL;CELL:557181940000\nTEL;FAX:\nEMAIL;WORK;INTERNET:fabiocj@gmail.com\nURL:\nBDAY:09/01/1985\nEND:VCARD\n",
 							"format" : "QR_CODE",
 							"cancelled" : false
 						}));
